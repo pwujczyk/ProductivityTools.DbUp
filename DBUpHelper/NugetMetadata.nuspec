@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DBUpHelperPT</id>
+    <version>0.0.1</version>
+    <title>DBUp Helper</title>
+    <authors>Pawel Wujczyk</authors>
+    <owners>Pawel Wujczyk</owners>
+    <projectUrl>http://www.productivitytools.tech/dbuphelper/</projectUrl>
+    <description>DBUp is a package which manages database updates. This package adds additinoal functionality to DBUp like creating the database and log table.</description>
+    <tags>DBUp SQL scripts udpate database</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>
