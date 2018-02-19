@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUpHelper", "DBUpHelper\DBUpHelper.csproj", "{935A1B8B-9B9D-4AD3-BC9A-B88A57A37B65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUpPT", "DBUpHelper\DBUpPT.csproj", "{935A1B8B-9B9D-4AD3-BC9A-B88A57A37B65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A621EDED-315F-4F37-B90D-F3902F0E7908}"
 	ProjectSection(SolutionItems) = preProject
