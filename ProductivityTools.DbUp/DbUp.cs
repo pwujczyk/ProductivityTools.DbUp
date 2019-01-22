@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBUpPT
+namespace ProductivityTools 
 {
     public class DBUp
     {
@@ -53,10 +53,10 @@ namespace DBUpPT
 
         public void PerformUpdate(string dataSource, string databaseName, Assembly assembly, bool LeaveConsoleOpen = false)
         {
-            var dataSourceCS = ConnectionStringLightPT.ConnectionStringLight.GetSqlDataSourceConnectionString(dataSource);
+            var dataSourceCS = ConnectionStringLight.GetSqlDataSourceConnectionString(dataSource);
             CreateSQLDB(databaseName, dataSourceCS);
 
-            string connectionString = ConnectionStringLightPT.ConnectionStringLight.GetSqlServerConnectionString(dataSource, databaseName);
+            string connectionString = ConnectionStringLight.GetSqlServerConnectionString(dataSource, databaseName);
             CreateAdminSchema(connectionString);
             UpdateDatabase(assembly, connectionString, LeaveConsoleOpen);
         }

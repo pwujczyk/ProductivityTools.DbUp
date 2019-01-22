@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>DBUpPT</id>
-    <version>0.0.1</version>
+    <id>ProductivityTools.DbUp</id>
+    <version>0.0.2</version>
     <title>DBUp additional tools</title>
     <authors>Pawel Wujczyk</authors>
     <owners>Pawel Wujczyk</owners>
