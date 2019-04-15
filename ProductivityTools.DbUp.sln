@@ -1,14 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.0
+VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductivityTools.DbUp", "ProductivityTools.DbUp\ProductivityTools.DbUp.csproj", "{935A1B8B-9B9D-4AD3-BC9A-B88A57A37B65}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A621EDED-315F-4F37-B90D-F3902F0E7908}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NugetMetadata.nuspec = .nuget\NugetMetadata.nuspec
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductivityTools.DBUp", "ProductivityTools.DbUp\ProductivityTools.DBUp.csproj", "{AC0CBD77-2B5E-47FA-9A3C-1B924BAC45F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{935A1B8B-9B9D-4AD3-BC9A-B88A57A37B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{935A1B8B-9B9D-4AD3-BC9A-B88A57A37B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{935A1B8B-9B9D-4AD3-BC9A-B88A57A37B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{935A1B8B-9B9D-4AD3-BC9A-B88A57A37B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0CBD77-2B5E-47FA-9A3C-1B924BAC45F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0CBD77-2B5E-47FA-9A3C-1B924BAC45F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0CBD77-2B5E-47FA-9A3C-1B924BAC45F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0CBD77-2B5E-47FA-9A3C-1B924BAC45F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {62D0B156-D258-477B-9DD7-4D8CFC3E1B18}
+		SolutionGuid = {2773FB81-0EBD-4C19-AE49-6D0BF2884772}
 	EndGlobalSection
 EndGlobal
