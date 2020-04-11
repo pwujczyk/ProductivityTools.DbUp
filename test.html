@@ -1,0 +1,18 @@
+<h1 id="dbuppt">DBUpPT</h1>
+<p>DBUp is a package which manages database updates. This package adds additinoal functionality to DBUp like creating the database and creating log table.</p>
+<p>To use it please reference package with the package manager console</p>
+<p><code>Install-Package DBUpHelperPT</code></p>
+<p>Next create Console application and in the main add following code:</p>
+<pre><code>string serverName = &quot;ServerName&quot;;
+string dbName = &quot;DatabaseName&quot;;
+DBUpHelper.DBUp dBUp = new DBUpHelper.DBUp(&quot;gc&quot;);
+Assembly assembly = Assembly.GetExecutingAssembly();
+dBUp.PerformUpdate(serverName, dbName, assembly, false)</code></pre>
+<p>Next add Scripts Folder and create inside sql scripts which you want to execute. In the properties of the script please select Embeded resource</p>
+<p>When application will start, DBUpHelper will:</p>
+<ul>
+<li>Check if database “DatabaseName” exists if not it will create it</li>
+<li>In the database it will create schema provided in the constructor “gc”</li>
+<li>It will start executing the scripts from the Script folder.</li>
+</ul>
+<p>More information here http://www.productivitytools.tech/dbuphelper/</p>
