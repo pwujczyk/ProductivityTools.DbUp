@@ -1,26 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net46</TargetFrameworks>
-    <Version>0.0.3</Version>
+    <Version>0.0.5</Version>
     <Authors>Pawel Wujczyk</Authors>
-    <Product>ProductivityTools.DBUp</Product>
-    <PackageId>ProductivityTools.DBUp</PackageId>
+    <Product>ProductivityTools.DbUpHelper</Product>
+    <PackageId>ProductivityTools.DbUpHelper</PackageId>
     <Description>DBUp is a package which manages database updates. This package adds additinoal functionality to DBUp like creating the database and log table.</Description>
     <PackageProjectUrl>http://www.productivitytools.tech/dbupPT/</PackageProjectUrl>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
     <PackageTags>DBUp SQL scripts udpate database</PackageTags>
     <Company>ProductivityTools</Company>
     <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.DbUp</RepositoryUrl>
   </PropertyGroup>
-
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="dbup" Version="4.2.0" />
     <PackageReference Include="ProductivityTools.ConnectionStringLight" Version="0.0.5" />
   </ItemGroup>
-
 </Project>
