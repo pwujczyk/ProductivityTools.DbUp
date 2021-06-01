@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductivityTools.DbUpHelper", "ProductivityTools.DbUpHelper\ProductivityTools.DbUpHelper.csproj", "{AC0CBD77-2B5E-47FA-9A3C-1B924BAC45F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductivityTools.DbUp", "ProductivityTools.DbUp\ProductivityTools.DbUp.csproj", "{AC0CBD77-2B5E-47FA-9A3C-1B924BAC45F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
