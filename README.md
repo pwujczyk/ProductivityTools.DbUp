@@ -16,6 +16,8 @@
 DbUp is a package which manages database updates. ProductivityTools DbUp package adds additional functionality to base DbUp like creating the database and creating log table.
 <!--more-->
 
+I like to use it as in the DbUp I need to provide whole connection string and here only server name and database name. 
+
 To use it please reference package with the package manager console
 
 `Install-Package ProductivityTools.DbUp`
