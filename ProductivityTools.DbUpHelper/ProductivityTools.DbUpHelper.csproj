@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net46</TargetFrameworks>
-    <Version>0.0.5</Version>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>0.0.6</Version>
     <Authors>Pawel Wujczyk</Authors>
     <Product>ProductivityTools.DbUpHelper</Product>
     <PackageId>ProductivityTools.DbUpHelper</PackageId>
@@ -14,10 +14,12 @@
     <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.DbUp</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="dbup" Version="4.2.0" />
+    <PackageReference Include="dbup" Version="4.5.0" />
     <PackageReference Include="ProductivityTools.ConnectionStringLight" Version="0.0.5" />
   </ItemGroup>
 </Project>
