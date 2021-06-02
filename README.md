@@ -42,3 +42,35 @@ When application will start, DBUpHelper will:
   * In the database it will create schema provided in the constructor "gc"
   * It will start executing the scripts from the Script folder.
 
+
+## Original DbUp code
+
+Those four lines above can are shorten version of the code from DbUp page
+
+```C#
+            var connectionString = "Server=.\\SQL2019;Database=PTTeamManagment;Trusted_connection=true";
+            EnsureDatabase.For.SqlDatabase(connectionString);
+            var upgrader =
+                DeployChanges.To
+                    .SqlDatabase(connectionString)
+                    .WithScriptsEmbeddedInAssembly(Assembly.GetExecutingAssembly())
+                    .LogToConsole()
+                    .Build();
+
+            var result = upgrader.PerformUpgrade();
+
+            if (!result.Successful)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(result.Error);
+                Console.ResetColor();
+#if DEBUG
+                Console.ReadLine();
+#endif
+            }
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Success!");
+            Console.ResetColor();
+
+```
