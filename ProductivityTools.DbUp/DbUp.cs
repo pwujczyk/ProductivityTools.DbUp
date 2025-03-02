@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductivityTools 
+namespace ProductivityTools
 {
     public class DBUp
     {
@@ -51,12 +51,12 @@ namespace ProductivityTools
             InvokeQuery(initialCatalogConnectionString, query);
         }
 
-        public void PerformUpdate(string dataSource, string databaseName, Assembly assembly, bool LeaveConsoleOpen = false)
+        public void PerformUpdate(string dataSource, string databaseName, Assembly assembly,bool LeaveConsoleOpen = false, bool? trustServerCertificate = null)
         {
-            var dataSourceCS = ConnectionStringLight.GetSqlDataSourceConnectionString(dataSource);
+            var dataSourceCS = ConnectionStringLight.GetSqlDataSourceConnectionString(dataSource, trustServerCertificate);
             CreateSQLDB(databaseName, dataSourceCS);
 
-            string connectionString = ConnectionStringLight.GetSqlServerConnectionString(dataSource, databaseName,true);
+            string connectionString = ConnectionStringLight.GetSqlServerConnectionString(dataSource, databaseName, trustServerCertificate);
             CreateAdminSchema(connectionString);
             UpdateDatabase(assembly, connectionString, LeaveConsoleOpen);
         }
