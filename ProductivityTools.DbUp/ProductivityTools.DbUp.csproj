@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Version>0.0.7</Version>
     <Authors>Pawel Wujczyk</Authors>
     <Product>ProductivityTools.DbUp</Product>
@@ -19,7 +19,7 @@
     <None Remove="Properties\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="dbup" Version="4.5.0" />
-    <PackageReference Include="ProductivityTools.ConnectionStringLight" Version="0.0.5" />
+    <PackageReference Include="dbup" Version="5.0.41" />
+    <PackageReference Include="ProductivityTools.ConnectionStringLight" Version="0.0.10" />
   </ItemGroup>
 </Project>

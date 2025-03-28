@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "ProductivityTools.DbUp": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\GitHub\\ProductivityTools.Feedback.Api\\ProductivityTools.Feedback.Api.DatabaseMigrations\\bin\\Debug\\net6.0"
+    },
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "D:\\GitHub\\ProductivityTools.Feedback.Api\\ProductivityTools.Feedback.Api.DatabaseMigrations\\bin\\Debug\\net6.0\\ProductivityTools.Feedback.Api.DatabaseMigrations.exe"
+    }
+  }
+}

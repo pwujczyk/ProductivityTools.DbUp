@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -56,7 +56,7 @@ namespace ProductivityTools
             var dataSourceCS = ConnectionStringLight.GetSqlDataSourceConnectionString(dataSource);
             CreateSQLDB(databaseName, dataSourceCS);
 
-            string connectionString = ConnectionStringLight.GetSqlServerConnectionString(dataSource, databaseName);
+            string connectionString = ConnectionStringLight.GetSqlServerConnectionString(dataSource, databaseName,true);
             CreateAdminSchema(connectionString);
             UpdateDatabase(assembly, connectionString, LeaveConsoleOpen);
         }
